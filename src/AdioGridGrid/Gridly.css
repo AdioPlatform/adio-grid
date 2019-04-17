@@ -1,0 +1,103 @@
+.GridContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-template-rows: 75px auto;
+  grid-template-columns: 200px auto;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.Corner {
+  grid-column-start: 1;
+  grid-row-start: 1;
+
+  border-bottom: 2px solid black;
+}
+
+.Timeline {
+  grid-column-start: 2;
+  grid-row-start: 1;
+
+  border-bottom: 2px solid blue;
+}
+
+.TrackHeaders {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  border-bottom: 2px solid green;
+  background: lightcyan;
+}
+
+.Tracks {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  position: relative;
+  background: lightcyan;
+}
+
+.TrackHeadersContainer {
+  width: 100%;
+}
+
+.TracksContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.TrackHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid pink;
+  background: white;
+  position: relative;
+}
+
+.TrackHeader .Handle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: red;
+  cursor: ns-resize;
+}
+
+.Track {
+  border-bottom: 2px solid yellow;
+  width: 100%;
+  display: flex;
+  background: white;
+}
+
+.Playhead {
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: 2px;
+  background: black;
+}
+
+.PlayheadIcon {
+  position: absolute;
+  top: -4px;
+  height: 16px;
+  left: -7px;
+}
+
+.Clip {
+  height: 100%;
+  width: 200px;
+  background: lightgreen;
+  border-radius: 16px;
+  border: 1px solid blue;
+}
